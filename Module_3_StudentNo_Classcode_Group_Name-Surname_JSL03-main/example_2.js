@@ -19,6 +19,7 @@ function cookSteak(steakWeight, desiredDoneness) {
       { action: 'Cook steak until desired doneness', desiredDoneness },
       { action: 'Serve steak' }
     ];
+    // The use of data structures (arrays and objects) organizes the steps logically, making the code more maintainable and readable. 
   
     // Execute the cooking process
     for (const step of cookingProcess) {                            // for loop
@@ -43,3 +44,8 @@ function cookSteak(steakWeight, desiredDoneness) {
   
   cookSteak(16, 63); // Cook a 16 oz steak to medium-rare (63°C)
   
+  
+  // Abstraction Layers:
+  //- The code abstracts away the implementation details of each step
+  //- It focuses on defining the high-level actions without specifying how they are carried out
+  //- This approach allows flexibility and separation of concerns

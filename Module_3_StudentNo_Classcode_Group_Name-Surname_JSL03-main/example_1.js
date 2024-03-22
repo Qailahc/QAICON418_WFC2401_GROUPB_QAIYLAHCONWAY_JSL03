@@ -6,17 +6,18 @@
 // Mutable Variables: The code uses variables like `grillTemperature`, `steakTemperature`, and `seasoning`. These variables can change their values during execution, which aligns with the imperative paradigm.
 // Step-by-Step Instructions: Each step describes an action to be taken, such as preheating the grill, seasoning the steak, and cooking it.
 // Looping and Conditionals: The `while` loop checks whether `steakTemperature` is less than `desiredDoneness`.
-// Inside the loop, the steak is grilled, and the temperature is adjusted based on `steakWeight` and `desiredDoneness`.
-// The loop continues until the steak reaches the desired doneness.
-// The `if` statement determines whether the steak is ready to serve or needs more cooking.
+// - Inside the loop, the steak is grilled, and the temperature is adjusted based on `steakWeight` and `desiredDoneness`.
+// - The loop continues until the steak reaches the desired doneness.
+// - The `if` statement determines whether the steak is ready to serve or needs more cooking.
 
 
 function cookSteak(steakWeight, desiredDoneness) {
-    let grillTemperature = 0;
+    let grillTemperature = 0;     
     let steakTemperature = 0;
+    // Variables like `grillTemperature` and `steakTemperature` track the state and progress of the cooking process
     
     // Step 1: Preheat the grill
-    grillTemperature = 204; 
+    grillTemperature = 204;      // Mutable Variable
     
     // Step 2: Season the steak
     const seasoning = 'Salt and Pepper';
